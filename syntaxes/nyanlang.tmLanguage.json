@@ -1,0 +1,92 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Nyanlang",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#pointers"
+		},
+		{
+			"include": "#stdio"
+		},
+		{
+			"include": "#loop"
+		},
+		{
+			"include": "#debug"
+		}
+	],
+	"repository": {
+		"comment": {
+			"name": "comment",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"include": "#commentstring"
+				}
+			]
+		},
+		"commentstring": {
+			"name": "comment",
+			"match": "."
+		},
+		"operator": {
+			"name": "keyword.operator",
+			"match": "냥|냐"
+		},
+		"pointers": {
+			"name": "keyword.control",
+			"match": "\\?|!"
+		},
+		"stdio": {
+			"name": "constant.character",
+			"match": "\\.|,"
+		},
+		"loop": {
+			"name": "expression.group",
+			"begin": "~",
+			"end": "-",
+			"beginCaptures": {
+				"0": {
+					"name": "keyword.other"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "keyword.other"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#comment"
+				},
+				{
+					"include": "#operator"
+				},
+				{
+					"include": "#pointers"
+				},
+				{
+					"include": "#stdio"
+				},
+				{
+					"include": "#loop"
+				},
+				{
+					"include": "#debug"
+				}
+			]
+		},
+		"debug": {
+			"name": "keyword.other",
+			"match": "뀨"
+		}
+	},
+	"scopeName": "source.nyan"
+}

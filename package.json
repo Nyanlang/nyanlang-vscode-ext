@@ -1,0 +1,25 @@
+{
+  "name": "nyanlang-language",
+  "displayName": "Nyanlang-language",
+  "description": "Language support for Nyanlang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nyanlang",
+      "aliases": ["Nyanlang", "nyanlang"],
+      "extensions": [".nyan"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nyanlang",
+      "scopeName": "source.nyan",
+      "path": "./syntaxes/nyanlang.tmLanguage.json"
+    }]
+  }
+}
