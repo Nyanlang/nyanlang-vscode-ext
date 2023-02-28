@@ -14,12 +14,20 @@
       "id": "nyanlang",
       "aliases": ["Nyanlang", "nyanlang"],
       "extensions": [".nyan"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icons/nyanlang-light.png",
+        "dark": "./icons/nyanlang-dark.png"
+      }
     }],
     "grammars": [{
       "language": "nyanlang",
       "scopeName": "source.nyan",
       "path": "./syntaxes/nyanlang.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sserve-kr/nyanlang-language"
   }
 }
