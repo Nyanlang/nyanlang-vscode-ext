@@ -9,6 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "icon": "./icons/nyanlang-dark.png",
   "contributes": {
     "languages": [{
       "id": "nyanlang",
