@@ -23,8 +23,8 @@
         ],
         "configuration": "./language-configuration.json",
         "icon": {
-          "light": "./icons/nyanlang-light.png",
-          "dark": "./icons/nyanlang-dark.png"
+          "light": "./icons/nyanlang-dark.png",
+          "dark": "./icons/nyanlang-light.png"
         }
       }
     ],
