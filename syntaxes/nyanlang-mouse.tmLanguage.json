@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NyanlangMouse",
+	"patterns": [
+		{
+			"include": "#pointer"
+		},
+        {
+            "include": "#address"
+        }
+	],
+	"repository": {
+		"pointer": {
+            "name": "comment",
+            "match": "->"
+        },
+        "address": {
+            "name": "constant.numeric",
+            "match": "-?[0-9]+"
+        }
+	},
+	"scopeName": "source.mouse"
+}

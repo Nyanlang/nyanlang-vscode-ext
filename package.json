@@ -2,7 +2,7 @@
   "name": "nyanlang-language",
   "displayName": "Nyanlang-language",
   "description": "Language support for Nyanlang",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -23,6 +23,21 @@
         ],
         "configuration": "./language-configuration.json",
         "icon": {
+          "light": "./icons/nyanlang-new.png",
+          "dark": "./icons/nyanlang-new.png"
+        }
+      },
+      {
+        "id": "nyanlang-mouse",
+        "aliases": [
+          "NyanlangMouse",
+          "nyanlang-mouse"
+        ],
+        "extensions": [
+          ".mouse"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
           "light": "./icons/nyanlang-dark.png",
           "dark": "./icons/nyanlang-light.png"
         }
@@ -33,6 +48,11 @@
         "language": "nyanlang",
         "scopeName": "source.nyan",
         "path": "./syntaxes/nyanlang.tmLanguage.json"
+      },
+      {
+        "language": "nyanlang-mouse",
+        "scopeName": "source.mouse",
+        "path": "./syntaxes/nyanlang-mouse.tmLanguage.json"
       }
     ]
   },

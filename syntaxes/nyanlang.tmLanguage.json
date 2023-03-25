@@ -34,19 +34,19 @@
 		},
 		"commentstring": {
 			"name": "comment",
-			"match": "."
+			"match": ".jk"
 		},
 		"operator": {
-			"name": "keyword.operator",
+			"name": "string",
 			"match": "냥|냐"
 		},
 		"pointers": {
 			"name": "keyword.control",
-			"match": "\\?|!"
+			"match": "\\?|!|먕|먀"
 		},
 		"stdio": {
 			"name": "constant.character",
-			"match": "\\.|,"
+			"match": "\\.|,|:|;"
 		},
 		"loop": {
 			"name": "expression.group",
@@ -85,7 +85,7 @@
 		},
 		"debug": {
 			"name": "keyword.other",
-			"match": "뀨"
+			"match": "뀨|'"
 		}
 	},
 	"scopeName": "source.nyan"
