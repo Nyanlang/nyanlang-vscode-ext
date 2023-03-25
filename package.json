@@ -2,14 +2,14 @@
   "name": "nyanlang-language",
   "displayName": "Nyanlang-language",
   "description": "Language support for Nyanlang",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "engines": {
     "vscode": "^1.75.0"
   },
   "categories": [
     "Programming Languages"
   ],
-  "icon": "./icons/nyanlang-dark.png",
+  "icon": "./icons/nyanlang-new.png",
   "contributes": {
     "languages": [
       {
